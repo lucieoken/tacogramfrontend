@@ -1,7 +1,7 @@
 function getPostsFromAPI() {
   // Replace this with the URL of the JSON API that returns an array of image URLs
-  const url = 'YOUR_URL_GOES_HERE';
-  if (url == 'YOUR_URL_GOES_HERE') {
+  const url = 'https://3000-lucieoken-tacogramfinal-v889rhbx7x1.ws-us114.gitpod.io.json/';
+  if (url == 'https://3000-lucieoken-tacogramfinal-v889rhbx7x1.ws-us114.gitpod.io.json/') {
     alert('Error: Replace url value in tacostagram.js')
   }
 
@@ -15,7 +15,10 @@ function getPostsFromAPI() {
         console.log(post);
 
         // html for each post goes here
-        let html = ``;
+        let html = `
+        <div class="col-sm-6 col-md-3">
+        <img src="${post}
+        `;
 
         const postsDiv = document.querySelector('#posts');
         postsDiv.innerHTML += html
